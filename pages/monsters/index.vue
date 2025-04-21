@@ -1,7 +1,9 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2 w-full">Monsters</h1>
+      <h1 class="my-2 w-full">
+        Monsters
+      </h1>
 
       <ApiTableNav
         class="w-full"
@@ -59,7 +61,12 @@
       ]"
     />
 
-    <h3 ref="results" class="sr-only" tabindex="-1" @keyup.esc="focusFilter" />
+    <h3
+      ref="results"
+      class="sr-only"
+      tabindex="-1"
+      @keyup.esc="focusFilter"
+    />
 
     <ApiResultsTable
       v-model="debouncedFilter"
